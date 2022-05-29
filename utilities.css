@@ -15,7 +15,8 @@
 /* Hide scrollbar for IE, Edge and Firefox */
 .main {
     height: 550px;
-    width: 450px;
+    max-width: 450px;
+    min-width: 350px;
     border-radius: 20px;
     overflow: scroll;
     margin-top: 40px;
