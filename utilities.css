@@ -8,7 +8,22 @@
     --baby-blue: #c5e8e3;
 }
 
+.main::-webkit-scrollbar {
+    display: none;
+}
 
+/* Hide scrollbar for IE, Edge and Firefox */
+.main {
+    height: 550px;
+    width: 450px;
+    border-radius: 20px;
+    overflow: scroll;
+    margin-top: 40px;
+    -ms-overflow-style: none;
+    /* IE and Edge */
+    scrollbar-width: none;
+    /* Firefox */
+}
 
 
 
@@ -47,18 +62,21 @@ p {
     align-items: center;
     scroll-behavior: smooth;
 }
+
 .container {
     max-width: 450px;
     min-width: 350px;
     height: 550px;
     background-color: var(--baby-blue);
 }
+
 .container-left {
     display: flex;
     align-items: flex-end;
     justify-content: space-between;
-    
+
 }
+
 .container-right {
     display: flex;
     align-items: flex-end;
@@ -71,18 +89,20 @@ p {
     grid-template-columns: 100%;
     grid-template-rows: 50px 400px;
     grid-column-gap: 0px;
-    grid-row-gap: 0px;    
+    grid-row-gap: 0px;
     width: 90%;
     align-items: center;
     justify-content: center;
 }
-.grid-area-1{
+
+.grid-area-1 {
     grid-area: 1 / 1 / 2 / 2;
     display: flex;
     justify-content: center;
     align-items: center;
 }
-.grid-area-2{
+
+.grid-area-2 {
     grid-area: 2 / 1 / 3 / 2;
 }
 
@@ -93,7 +113,7 @@ p {
 
 /* The Navigation Line  */
 
-.line-container grid-area-1 grid-area-1{
+.line-container grid-area-1 grid-area-1 {
     display: flex;
     justify-content: center;
 }
