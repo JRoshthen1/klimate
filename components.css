@@ -1,0 +1,176 @@
+/*  BUTTONS */
+button{
+    cursor: pointer;
+}
+/* Pill button */
+.pill-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 19.5px;
+}
+.pill-btn{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    font-family: Montserrat;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 1.5em;
+    outline: none;
+    width: 80px;
+    padding: 8px 9.7px;
+    border: 1px solid var(--klimate-blue);
+}
+
+.pill-btn svg{
+    width: 1.1em;
+    margin-bottom: 1px
+}
+
+/* Pill Contents*/
+.btn-next-pill {
+    border-top-right-radius: 90px;
+    border-bottom-right-radius: 90px;
+    color: #fff;
+    background-color: var(--klimate-blue);
+}
+
+.btn-back-pill {
+    border-top-left-radius: 90px;
+    border-bottom-left-radius: 90px;
+    color: var(--klimate-blue);
+    background: none;
+}
+/* start Button */
+.pill-btn-start{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: Montserrat;
+    font-size: 13px;
+    font-weight: 500;
+    line-height: 1.5em;
+    outline: none;
+    padding: 7px 20px;
+    background-color: var(--klimate-blue);
+    border: 1px solid #1E4961;
+    border-radius: 90px;
+    color: #fff;
+}
+
+
+/* Submit Button */
+
+.pill-btn-submit{
+    border-top-right-radius: 90px;
+    border-bottom-right-radius: 90px;
+    color: #fff;
+    background-color: var(--klimate-blue);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    font-family: Montserrat;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 1.5em;
+    outline: none;
+    width: 90px;
+    padding: 8px 9.7px;
+    border: 1px solid #1E4961;
+}
+
+.pill-btn-submit svg{
+    width: 1em;
+    margin-bottom: 1px
+}
+
+
+/* Active and hover styling of Button */
+.btn-active{
+    transition: all .15s ease-in-out;
+}
+.btn-active:hover {
+    -webkit-box-shadow: rgb(33 81 108 / 20%) 0px 0px 0px 0.2rem;
+    -moz-box-shadow: rgb(33 81 108 / 20%) 0px 0px 0px 0.2rem;
+    box-shadow: rgb(33 81 108 / 20%) 0px 0px 0px 0.2rem;
+}
+
+.btn-active:active {
+    -webkit-box-shadow: rgb(33 81 108 / 20%) 0px 0px 0px 0.2rem;
+    -moz-box-shadow: rgb(33 81 108 / 20%) 0px 0px 0px 0.2rem;
+    box-shadow: 0px 0px 0px 0.2rem rgba(33, 81, 108, 0.5);
+}
+.btn-active:focus{
+    box-shadow: rgb(33 81 108 / 50%) 0px 0px 0px 0.2rem;
+}
+
+
+/* INPUTS */
+
+/* Text Input */
+.input-text {
+    width: 95%;
+    font-size: 13px;
+    font-family: Montserrat, sans-serif;
+    line-height: 1.5em;
+    border: 1px solid rgb(255, 255, 255);
+    color: rgb(33, 81, 108);
+    border-radius: 50px;
+    padding: 0.6075em 0.75em;
+    margin-top: 13px;
+    transition: all .2s ease-in-out;
+    cursor: text;
+}
+
+.input-text:hover {
+    box-shadow: rgb(255 255 255 / 20%) 0px 0px 0px 0.2rem;
+}
+
+.input-text:focus {
+    background-color: rgb(255, 255, 255);
+    border-color: rgb(255, 255, 255);
+    color: rgb(33, 81, 108);
+    box-shadow: rgb(255 255 255 / 50%) 0px 0px 0px 0.2rem;
+    outline: none;
+}
+
+.input-text::placeholder {
+    color: var(--klimate-blue);
+    opacity: 55%;
+}
+
+/* Select Input */
+.input-select {
+    width: 100%;
+    font-size: 13px;
+    font-family: Montserrat, sans-serif;
+    text-align: center;
+    line-height: 1.5em;
+    border: 1px solid rgb(255, 255, 255);
+    color: rgba(33, 81, 108, 0.703);
+    border-radius: 50px;
+    padding: 0.6075em 0.75em;
+    margin-top: 13px;
+    transition: all .2s ease-in-out;
+    cursor: pointer;
+}
+
+.input-select option {
+    opacity: 50%;
+}
+
+.input-select:hover {
+    box-shadow: rgb(255 255 255 / 20%) 0px 0px 0px 0.2rem;
+}
+
+.input-select:focus {
+    background-color: rgb(255, 255, 255);
+    border-color: rgb(255, 255, 255);
+    color: rgb(33, 81, 108);
+    box-shadow: rgb(255 255 255 / 50%) 0px 0px 0px 0.2rem;
+    outline: none;
+}

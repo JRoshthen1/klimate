@@ -1,0 +1,715 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="/utilities.css">
+    <link rel="stylesheet" href="/components.css">
+
+    <title>Calculation Cost Tool</title>
+</head>
+
+<body class="flex">
+
+
+    <div style="height: 550px; width: 450px; border-radius: 20px; overflow: scroll; margin-top: 40px;">
+        <div>
+            <!-- Starting page -->
+            <div id="q0" class="container flex">
+    
+    
+                    <div style="width: 90%;">
+                        <!-- The Question with input -->
+                        <div style="margin-bottom: 30px;" class="heading">Get an aproximate calculation cost price</div>
+                        <p style="margin-right: 40px; margin-bottom: 30px;">
+                            Answer a few questions about your company and get a quick cost assement for you CO2 calculation.
+                            <br><br>
+                            Your information will be used to make the tool more efficient and will not be shared with
+                            anyone.
+                            <br><br><br>
+                            To begin your calculation, click the Start button
+                        </p>
+    
+    
+                <!-- SUBMIT == BUTTON PILL -->
+                <button class="pill-btn-start btn-active" onclick="pos1()"><b>Start</b></button>
+    
+    
+                    </div>
+    
+            </div>
+    
+            <!-- Question 1 - Name -->
+            <div id="q1" class="container flex">
+                <div class="grid-layout">
+    
+                    <!-- The Navigation Line -->
+                    <div class="line-container grid-area-1">
+                        <div class="ball-container">
+                            <hr class="line">
+                            <div onclick="pos1()" class="ball-active"></div>
+                            <div onclick="pos2()" class="ball"></div>
+                            <div onclick="pos3()" class="ball"></div>
+                            <div onclick="pos4()" class="ball"></div>
+                            <div onclick="pos5()" class="ball"></div>
+                            <div onclick="pos6()" class="ball"></div>
+                            <div onclick="pos7()" class="ball"></div>
+                            <div onclick="pos8()" class="ball"></div>
+                            <div onclick="pos9()" class="ball"></div>
+                            <div onclick="pos10()" class="ball"></div>
+                        </div>
+                    </div>
+    
+                    <div class="grid-area-2">
+                        <!-- The Question with input -->
+                        <div class="heading">What is your company’s name</div>
+    
+                        <input type="text" placeholder="Company's Name" class="input-text">
+    
+                        <!-- BACK == BUTTON PILL -->
+                        <div class="container-left">
+                            <div class="pill-container">
+                                <button class="pill-btn btn-back-pill btn-active" onclick="pos0()">
+    
+                                    <svg class="arrow-up" aria-hidden="true" viewBox="0 0 20 20">
+                                        <path fill="rgb(33, 81, 108)"
+                                            d="M9.146 0.646l-6 6c-0.195 0.195-0.195 0.512 0 0.707s0.512 0.195 0.707 0l5.146-5.146v16.293c0 0.276 0.224 0.5 0.5 0.5s0.5-0.224 0.5-0.5v-16.293l5.146 5.146c0.195 0.195 0.512 0.195 0.707 0 0.098-0.098 0.146-0.226 0.146-0.354s-0.049-0.256-0.146-0.354l-6-6c-0.195-0.195-0.512-0.195-0.707 0z">
+                                        </path>
+                                    </svg>
+    
+                                    Back
+                                </button>
+    
+                                <!-- NEXT == BUTTON PILL -->
+                                <button class=" pill-btn btn-next-pill btn-active" onclick="pos2()">Next
+    
+                                    <svg class="arrow-down" viewBox="0 0 20 20">
+                                        <path fill=#fff
+                                            d="M9.854 19.354l6-6c0.195-0.195 0.195-0.512 0-0.707s-0.512-0.195-0.707 0l-5.146 5.146v-16.293c0-0.276-0.224-0.5-0.5-0.5s-0.5 0.224-0.5 0.5v16.293l-5.146-5.146c-0.195-0.195-0.512-0.195-0.707 0-0.098 0.098-0.146 0.226-0.146 0.354s0.049 0.256 0.146 0.354l6 6c0.195 0.195 0.512 0.195 0.707 0z">
+                                        </path>
+                                    </svg>
+                                </button>
+    
+                            </div>
+                        </div>
+    
+                    </div>
+                </div>
+            </div>
+    
+    
+            <!-- Question 2 - Website -->
+            <div id="q2" class="container flex">
+                <div class="grid-layout">
+    
+                    <!-- The Navigation Line -->
+                    <div class="line-container grid-area-1">
+                        <div class="ball-container">
+                            <hr class="line">
+                            <div onclick="pos1()" class="ball"></div>
+                            <div onclick="pos2()" class="ball-active"></div>
+                            <div onclick="pos3()" class="ball"></div>
+                            <div onclick="pos4()" class="ball"></div>
+                            <div onclick="pos5()" class="ball"></div>
+                            <div onclick="pos6()" class="ball"></div>
+                            <div onclick="pos7()" class="ball"></div>
+                            <div onclick="pos8()" class="ball"></div>
+                            <div onclick="pos9()" class="ball"></div>
+                            <div onclick="pos10()" class="ball"></div>
+                        </div>
+                    </div>
+    
+    
+                    <div class="grid-area-2">
+                        <!-- The Question with input -->
+                        <div class="heading">What is your company’s website?</div>
+                        <input type="url" placeholder="https://www.klimate.co" class="input-text">
+    
+                        <!-- BACK == BUTTON PILL -->
+                        <div class="container-left">
+                            <div class="pill-container">
+                                <button class="pill-btn btn-back-pill btn-active" onclick="pos1()">
+    
+                                    <svg class="arrow-up" aria-hidden="true" viewBox="0 0 20 20">
+                                        <path fill="rgb(33, 81, 108)"
+                                            d="M9.146 0.646l-6 6c-0.195 0.195-0.195 0.512 0 0.707s0.512 0.195 0.707 0l5.146-5.146v16.293c0 0.276 0.224 0.5 0.5 0.5s0.5-0.224 0.5-0.5v-16.293l5.146 5.146c0.195 0.195 0.512 0.195 0.707 0 0.098-0.098 0.146-0.226 0.146-0.354s-0.049-0.256-0.146-0.354l-6-6c-0.195-0.195-0.512-0.195-0.707 0z">
+                                        </path>
+                                    </svg>
+    
+                                    Back
+                                </button>
+    
+                                <!-- NEXT == BUTTON PILL -->
+                                <button class=" pill-btn btn-next-pill btn-active" onclick="pos3()">Next
+    
+                                    <svg class="arrow-down" viewBox="0 0 20 20">
+                                        <path fill=#fff
+                                            d="M9.854 19.354l6-6c0.195-0.195 0.195-0.512 0-0.707s-0.512-0.195-0.707 0l-5.146 5.146v-16.293c0-0.276-0.224-0.5-0.5-0.5s-0.5 0.224-0.5 0.5v16.293l-5.146-5.146c-0.195-0.195-0.512-0.195-0.707 0-0.098 0.098-0.146 0.226-0.146 0.354s0.049 0.256 0.146 0.354l6 6c0.195 0.195 0.512 0.195 0.707 0z">
+                                        </path>
+                                    </svg>
+                                </button>
+    
+                            </div>
+                        </div>
+    
+                    </div>
+                </div>
+            </div>
+    
+    
+            <!-- Question 3 - Employees -->
+            <div id="q3" class="container flex">
+                <div class="grid-layout">
+    
+                    <!-- The Navigation Line -->
+                    <div class="line-container grid-area-1">
+                        <div class="ball-container">
+                            <hr class="line">
+                            <div onclick="pos1()" class="ball"></div>
+                            <div onclick="pos2()" class="ball"></div>
+                            <div onclick="pos3()" class="ball-active"></div>
+                            <div onclick="pos4()" class="ball"></div>
+                            <div onclick="pos5()" class="ball"></div>
+                            <div onclick="pos6()" class="ball"></div>
+                            <div onclick="pos7()" class="ball"></div>
+                            <div onclick="pos8()" class="ball"></div>
+                            <div onclick="pos9()" class="ball"></div>
+                            <div onclick="pos10()" class="ball"></div>
+                        </div>
+                    </div>
+    
+                    <div class="grid-area-2">
+    
+                        <!-- The Question with input -->
+                        <div class="heading">How many employees does the company have?</div>
+                        <p>an order of magnitude is enough</p>
+    
+                        <select class="input-select" id="Continent" name="Continent">
+                            <option class="option" value="0-15">0-15 Employees</option>
+                            <option class="option" value="15-50">15-50 Employees</option>
+                            <option class="option" value="50-200">50-200 Employees</option>
+                            <option class="option" value="200-500">200-500 Employees</option>
+                            <option class="option" value="500+">500+ Employees</option>
+                        </select>
+    
+    
+                        <!-- BACK == BUTTON PILL -->
+                        <div class="container-left">
+                            <div class="pill-container">
+                                <button class="pill-btn btn-back-pill btn-active" onclick="pos2()">
+    
+                                    <svg class="arrow-up" aria-hidden="true" viewBox="0 0 20 20">
+                                        <path fill="rgb(33, 81, 108)"
+                                            d="M9.146 0.646l-6 6c-0.195 0.195-0.195 0.512 0 0.707s0.512 0.195 0.707 0l5.146-5.146v16.293c0 0.276 0.224 0.5 0.5 0.5s0.5-0.224 0.5-0.5v-16.293l5.146 5.146c0.195 0.195 0.512 0.195 0.707 0 0.098-0.098 0.146-0.226 0.146-0.354s-0.049-0.256-0.146-0.354l-6-6c-0.195-0.195-0.512-0.195-0.707 0z">
+                                        </path>
+                                    </svg>
+    
+                                    Back
+                                </button>
+    
+                                <!-- NEXT == BUTTON PILL -->
+                                <button class=" pill-btn btn-next-pill btn-active" onclick="pos4()">Next
+    
+                                    <svg class="arrow-down" viewBox="0 0 20 20">
+                                        <path fill=#fff
+                                            d="M9.854 19.354l6-6c0.195-0.195 0.195-0.512 0-0.707s-0.512-0.195-0.707 0l-5.146 5.146v-16.293c0-0.276-0.224-0.5-0.5-0.5s-0.5 0.224-0.5 0.5v16.293l-5.146-5.146c-0.195-0.195-0.512-0.195-0.707 0-0.098 0.098-0.146 0.226-0.146 0.354s0.049 0.256 0.146 0.354l6 6c0.195 0.195 0.512 0.195 0.707 0z">
+                                        </path>
+                                    </svg>
+                                </button>
+    
+                            </div>
+                        </div>
+    
+    
+                    </div>
+                </div>
+            </div>
+    
+    
+            <!-- Question 4 - Offices -->
+            <div id="q4" class="container flex">
+                <div class="grid-layout">
+    
+                    <!-- The Navigation Line -->
+                    <div class="line-container grid-area-1">
+                        <div class="ball-container">
+                            <hr class="line">
+                            <div onclick="pos1()" class="ball"></div>
+                            <div onclick="pos2()" class="ball"></div>
+                            <div onclick="pos3()" class="ball"></div>
+                            <div onclick="pos4()" class="ball-active"></div>
+                            <div onclick="pos5()" class="ball"></div>
+                            <div onclick="pos6()" class="ball"></div>
+                            <div onclick="pos7()" class="ball"></div>
+                            <div onclick="pos8()" class="ball"></div>
+                            <div onclick="pos9()" class="ball"></div>
+                            <div onclick="pos10()" class="ball"></div>
+                        </div>
+                    </div>
+    
+                    <div class="grid-area-2">
+                        <!-- The Question with input -->
+    
+                        <div class="heading">How many offices or/and branches does your company have?</div>
+                       
+                        <select class="input-select" id="Continent" name="Continent">
+                            <option class="option" value="0">0</option>
+                            <option class="option" value="1">1</option>
+                            <option class="option" value="2">2</option>
+                            <option class="option" value="3">3</option>
+                            <option class="option" value="4">4</option>
+                            <option class="option" value="5">5</option>
+                            <option class="option" value="6">6</option>
+                            <option class="option" value="7">7</option>
+                            <option class="option" value="8">8</option>
+                            <option class="option" value="9">9</option>
+                            <option class="option" value="10">10+</option>
+    
+                        </select>
+    
+                        <!-- BACK == BUTTON PILL -->
+                        <div class="container-left">
+                            <div class="pill-container">
+                                <button class="pill-btn btn-back-pill btn-active" onclick="pos3()">
+    
+                                    <svg class="arrow-up" aria-hidden="true" viewBox="0 0 20 20">
+                                        <path fill="rgb(33, 81, 108)"
+                                            d="M9.146 0.646l-6 6c-0.195 0.195-0.195 0.512 0 0.707s0.512 0.195 0.707 0l5.146-5.146v16.293c0 0.276 0.224 0.5 0.5 0.5s0.5-0.224 0.5-0.5v-16.293l5.146 5.146c0.195 0.195 0.512 0.195 0.707 0 0.098-0.098 0.146-0.226 0.146-0.354s-0.049-0.256-0.146-0.354l-6-6c-0.195-0.195-0.512-0.195-0.707 0z">
+                                        </path>
+                                    </svg>
+    
+                                    Back
+                                </button>
+    
+                                <!-- NEXT == BUTTON PILL -->
+                                <button class=" pill-btn btn-next-pill btn-active" onclick="pos5()">Next
+    
+                                    <svg class="arrow-down" viewBox="0 0 20 20">
+                                        <path fill=#fff
+                                            d="M9.854 19.354l6-6c0.195-0.195 0.195-0.512 0-0.707s-0.512-0.195-0.707 0l-5.146 5.146v-16.293c0-0.276-0.224-0.5-0.5-0.5s-0.5 0.224-0.5 0.5v16.293l-5.146-5.146c-0.195-0.195-0.512-0.195-0.707 0-0.098 0.098-0.146 0.226-0.146 0.354s0.049 0.256 0.146 0.354l6 6c0.195 0.195 0.512 0.195 0.707 0z">
+                                        </path>
+                                    </svg>
+                                </button>
+    
+                            </div>
+                        </div>
+    
+    
+                    </div>
+                </div>
+            </div>
+    
+    
+            <!-- Question 5 - Turnover -->
+            <div id="q5" class="container flex">
+                <div class="grid-layout">
+    
+                    <!-- The Navigation Line -->
+                    <div class="line-container grid-area-1">
+                        <div class="ball-container">
+                            <hr class="line">
+                            <div onclick="pos1()" class="ball"></div>
+                            <div onclick="pos2()" class="ball"></div>
+                            <div onclick="pos3()" class="ball"></div>
+                            <div onclick="pos4()" class="ball"></div>
+                            <div onclick="pos5()" class="ball-active"></div>
+                            <div onclick="pos6()" class="ball"></div>
+                            <div onclick="pos7()" class="ball"></div>
+                            <div onclick="pos8()" class="ball"></div>
+                            <div onclick="pos9()" class="ball"></div>
+                            <div onclick="pos10()" class="ball"></div>
+                        </div>
+                    </div>
+    
+    
+                    <div class="grid-area-2">
+                        <!-- The Question with input -->
+    
+                        <div class="heading">What is the company's annual turnover?</div>
+                        <input type="number" placeholder="500000" class="input-text">
+    
+                        <!-- BACK == BUTTON PILL -->
+                        <div class="container-left">
+                            <div class="pill-container">
+                                <button class="pill-btn btn-back-pill btn-active" onclick="pos4()">
+    
+                                    <svg class="arrow-up" aria-hidden="true" viewBox="0 0 20 20">
+                                        <path fill="rgb(33, 81, 108)"
+                                            d="M9.146 0.646l-6 6c-0.195 0.195-0.195 0.512 0 0.707s0.512 0.195 0.707 0l5.146-5.146v16.293c0 0.276 0.224 0.5 0.5 0.5s0.5-0.224 0.5-0.5v-16.293l5.146 5.146c0.195 0.195 0.512 0.195 0.707 0 0.098-0.098 0.146-0.226 0.146-0.354s-0.049-0.256-0.146-0.354l-6-6c-0.195-0.195-0.512-0.195-0.707 0z">
+                                        </path>
+                                    </svg>
+    
+                                    Back
+                                </button>
+    
+                                <!-- NEXT == BUTTON PILL -->
+                                <button class=" pill-btn btn-next-pill btn-active" onclick="pos6()">Next
+    
+                                    <svg class="arrow-down" viewBox="0 0 20 20">
+                                        <path fill=#fff
+                                            d="M9.854 19.354l6-6c0.195-0.195 0.195-0.512 0-0.707s-0.512-0.195-0.707 0l-5.146 5.146v-16.293c0-0.276-0.224-0.5-0.5-0.5s-0.5 0.224-0.5 0.5v16.293l-5.146-5.146c-0.195-0.195-0.512-0.195-0.707 0-0.098 0.098-0.146 0.226-0.146 0.354s0.049 0.256 0.146 0.354l6 6c0.195 0.195 0.512 0.195 0.707 0z">
+                                        </path>
+                                    </svg>
+                                </button>
+    
+                            </div>
+                        </div>
+    
+    
+                    </div>
+                </div>
+            </div>
+    
+    
+            <!-- Question 6 - HQ location -->
+            <div id="q6" class="container flex">
+                <div class="grid-layout">
+    
+                    <!-- The Navigation Line -->
+                    <div class="line-container grid-area-1">
+                        <div class="ball-container">
+                            <hr class="line">
+                            <div onclick="pos1()" class="ball"></div>
+                            <div onclick="pos2()" class="ball"></div>
+                            <div onclick="pos3()" class="ball"></div>
+                            <div onclick="pos4()" class="ball"></div>
+                            <div onclick="pos5()" class="ball"></div>
+                            <div onclick="pos6()" class="ball-active"></div>
+                            <div onclick="pos7()" class="ball"></div>
+                            <div onclick="pos8()" class="ball"></div>
+                            <div onclick="pos9()" class="ball"></div>
+                            <div onclick="pos10()" class="ball"></div>
+                        </div>
+                    </div>
+    
+                    <div class="grid-area-2">
+                        <!-- The Question with input -->
+                        <div class="heading">What is your company HQ Location?</div>
+                        <input type="text" placeholder="Denmark" class="input-text">
+                        
+    
+                        <!-- BACK == BUTTON PILL -->
+                        <div class="container-left">
+                            <div class="pill-container">
+                                <button class="pill-btn btn-back-pill btn-active" onclick="pos5()">
+    
+                                    <svg class="arrow-up" aria-hidden="true" viewBox="0 0 20 20">
+                                        <path fill="rgb(33, 81, 108)"
+                                            d="M9.146 0.646l-6 6c-0.195 0.195-0.195 0.512 0 0.707s0.512 0.195 0.707 0l5.146-5.146v16.293c0 0.276 0.224 0.5 0.5 0.5s0.5-0.224 0.5-0.5v-16.293l5.146 5.146c0.195 0.195 0.512 0.195 0.707 0 0.098-0.098 0.146-0.226 0.146-0.354s-0.049-0.256-0.146-0.354l-6-6c-0.195-0.195-0.512-0.195-0.707 0z">
+                                        </path>
+                                    </svg>
+    
+                                    Back
+                                </button>
+    
+                                <!-- NEXT == BUTTON PILL -->
+                                <button class=" pill-btn btn-next-pill btn-active" onclick="pos7()">Next
+    
+                                    <svg class="arrow-down" viewBox="0 0 20 20">
+                                        <path fill=#fff
+                                            d="M9.854 19.354l6-6c0.195-0.195 0.195-0.512 0-0.707s-0.512-0.195-0.707 0l-5.146 5.146v-16.293c0-0.276-0.224-0.5-0.5-0.5s-0.5 0.224-0.5 0.5v16.293l-5.146-5.146c-0.195-0.195-0.512-0.195-0.707 0-0.098 0.098-0.146 0.226-0.146 0.354s0.049 0.256 0.146 0.354l6 6c0.195 0.195 0.512 0.195 0.707 0z">
+                                        </path>
+                                    </svg>
+                                </button>
+    
+                            </div>
+                        </div>
+    
+    
+                    </div>
+                </div>
+            </div>
+    
+            <!-- Question 7 - Industry -->
+            <div id="q7" class="container flex">
+                <div class="grid-layout">
+    
+                    <!-- The Navigation Line -->
+                    <div class="line-container grid-area-1">
+                        <div class="ball-container">
+                            <hr class="line">
+                            <div onclick="pos1()" class="ball"></div>
+                            <div onclick="pos2()" class="ball"></div>
+                            <div onclick="pos3()" class="ball"></div>
+                            <div onclick="pos4()" class="ball"></div>
+                            <div onclick="pos5()" class="ball"></div>
+                            <div onclick="pos6()" class="ball"></div>
+                            <div onclick="pos7()" class="ball-active"></div>
+                            <div onclick="pos8()" class="ball"></div>
+                            <div onclick="pos9()" class="ball"></div>
+                            <div onclick="pos10()" class="ball"></div>
+                        </div>
+                    </div>
+    
+    
+                    <div class="grid-area-2">
+                        <!-- The Question with input -->
+                        <div class="heading">What is the main business operation of your company?</div>
+    
+    
+                        <select class="input-select" id="Industry" name="Industry">
+                            <option class="option" value="a">Agriculture, forestry and fishing</option>
+                            <option class="option" value="b">Mining and quarrying</option>
+                            <option class="option" value="c">Manufacturing</option>
+                            <option class="option" value="d">Electricity, gas, steam and air conditioning supply</option>
+                            <option class="option" value="e">Water supply, sewerage, waste management and remediation
+                                activities
+                            </option>
+                            <option class="option" value="f">Construction</option>
+                            <option class="option" value="g">Apparel</option>
+                            <option class="option" value="h">Wholesale and retail trade, repair of motor vehicles and
+                                motorcycles</option>
+                            <option class="option" value="i">Transporting and storage</option>
+                            <option class="option" value="j">Accommodation and food service activities</option>
+                            <option class="option" value="k">Information and communication</option>
+                            <option class="option" value="l">Real estate activities</option>
+                            <option class="option" value="m">Professional, scientific and technical activities</option>
+                            <option class="option" value="n">Administrative and support service activities</option>
+                            <option class="option" value="o">Education</option>
+                            <option class="option" value="p">Human health and social work activities</option>
+                            <option class="option" value="q">Arts, entertainment and recreation</option>
+                            <option class="option" value="r">Other services activities</option>
+                            <option class="option" value="s">Activities of households as employer, undifferentiated goods -
+                                and
+                                services - producing activities of households for own use</option>
+                            <option class="option" value="t">Activities of extraterritorial organisations and bodies
+                            </option>
+                        </select>
+    
+    
+                        <!-- BACK == BUTTON PILL -->
+                        <div class="container-left">
+                            <div class="pill-container">
+                                <button class="pill-btn btn-back-pill btn-active" onclick="pos6()">
+    
+                                    <svg class="arrow-up" aria-hidden="true" viewBox="0 0 20 20">
+                                        <path fill="rgb(33, 81, 108)"
+                                            d="M9.146 0.646l-6 6c-0.195 0.195-0.195 0.512 0 0.707s0.512 0.195 0.707 0l5.146-5.146v16.293c0 0.276 0.224 0.5 0.5 0.5s0.5-0.224 0.5-0.5v-16.293l5.146 5.146c0.195 0.195 0.512 0.195 0.707 0 0.098-0.098 0.146-0.226 0.146-0.354s-0.049-0.256-0.146-0.354l-6-6c-0.195-0.195-0.512-0.195-0.707 0z">
+                                        </path>
+                                    </svg>
+    
+                                    Back
+                                </button>
+    
+                                <!-- NEXT == BUTTON PILL -->
+                                <button class=" pill-btn btn-next-pill btn-active" onclick="pos8()">Next
+    
+                                    <svg class="arrow-down" viewBox="0 0 20 20">
+                                        <path fill=#fff
+                                            d="M9.854 19.354l6-6c0.195-0.195 0.195-0.512 0-0.707s-0.512-0.195-0.707 0l-5.146 5.146v-16.293c0-0.276-0.224-0.5-0.5-0.5s-0.5 0.224-0.5 0.5v16.293l-5.146-5.146c-0.195-0.195-0.512-0.195-0.707 0-0.098 0.098-0.146 0.226-0.146 0.354s0.049 0.256 0.146 0.354l6 6c0.195 0.195 0.512 0.195 0.707 0z">
+                                        </path>
+                                    </svg>
+                                </button>
+    
+                            </div>
+                        </div>
+    
+    
+                    </div>
+                </div>
+            </div>
+    
+    
+            <!-- Question 8 - Total or specific emissions -->
+            <div id="q8" class="container flex">
+                <div class="grid-layout">
+                    <!-- The Navigation Line -->
+                    <div class="line-container grid-area-1">
+                        <div class="ball-container">
+                            <hr class="line">
+                            <div onclick="pos1()" class="ball"></div>
+                            <div onclick="pos2()" class="ball"></div>
+                            <div onclick="pos3()" class="ball"></div>
+                            <div onclick="pos4()" class="ball"></div>
+                            <div onclick="pos5()" class="ball"></div>
+                            <div onclick="pos6()" class="ball"></div>
+                            <div onclick="pos7()" class="ball"></div>
+                            <div onclick="pos8()" class="ball-active"></div>
+                            <div onclick="pos9()" class="ball"></div>
+                            <div onclick="pos10()" class="ball"></div>
+                        </div>
+                    </div>
+    
+                    <div class="grid-area-2">
+                        <!-- The Question with input -->
+                        <div class="heading">Do you want to measure the total emissions or target a specific part of your business?</div>
+    
+                        <select class="input-select" id="Continent" name="Continent">
+                            <option class="option" value="europe">Total emissions (Carbon footprint measurement)</option>
+                            <option class="option" value="namerica">Specific part (Product/Service LCA)</option>
+                            <option class="option" value="samerica">Both (Carbon footprint+ LCA)</option>
+                            <option class="option" value="asia">Unknown</option>
+                        </select>
+                        <!-- BACK == BUTTON PILL -->
+                        <div class="container-left">
+                            <div class="pill-container">
+                                <button class="pill-btn btn-back-pill btn-active" onclick="pos7()">
+    
+                                    <svg class="arrow-up" aria-hidden="true" viewBox="0 0 20 20">
+                                        <path fill="rgb(33, 81, 108)"
+                                            d="M9.146 0.646l-6 6c-0.195 0.195-0.195 0.512 0 0.707s0.512 0.195 0.707 0l5.146-5.146v16.293c0 0.276 0.224 0.5 0.5 0.5s0.5-0.224 0.5-0.5v-16.293l5.146 5.146c0.195 0.195 0.512 0.195 0.707 0 0.098-0.098 0.146-0.226 0.146-0.354s-0.049-0.256-0.146-0.354l-6-6c-0.195-0.195-0.512-0.195-0.707 0z">
+                                        </path>
+                                    </svg>
+    
+                                    Back
+                                </button>
+    
+                                <!-- NEXT == BUTTON PILL -->
+                                <button class=" pill-btn btn-next-pill btn-active" onclick="pos9()">Next
+    
+                                    <svg class="arrow-down" viewBox="0 0 20 20">
+                                        <path fill=#fff
+                                            d="M9.854 19.354l6-6c0.195-0.195 0.195-0.512 0-0.707s-0.512-0.195-0.707 0l-5.146 5.146v-16.293c0-0.276-0.224-0.5-0.5-0.5s-0.5 0.224-0.5 0.5v16.293l-5.146-5.146c-0.195-0.195-0.512-0.195-0.707 0-0.098 0.098-0.146 0.226-0.146 0.354s0.049 0.256 0.146 0.354l6 6c0.195 0.195 0.512 0.195 0.707 0z">
+                                        </path>
+                                    </svg>
+                                </button>
+    
+                            </div>
+                        </div>
+    
+    
+                    </div>
+                </div>
+            </div>
+    
+    
+            <!-- Question 9 - Calculation method -->
+            <div id="q9" class="container flex">
+                <div class="grid-layout">
+                    <!-- The Navigation Line -->
+                    <div class="line-container grid-area-1">
+                        <div class="ball-container">
+                            <hr class="line">
+                            <div onclick="pos1()" class="ball"></div>
+                            <div onclick="pos2()" class="ball"></div>
+                            <div onclick="pos3()" class="ball"></div>
+                            <div onclick="pos4()" class="ball"></div>
+                            <div onclick="pos5()" class="ball"></div>
+                            <div onclick="pos6()" class="ball"></div>
+                            <div onclick="pos7()" class="ball"></div>
+                            <div onclick="pos8()" class="ball"></div>
+                            <div onclick="pos9()" class="ball-active"></div>
+                            <div onclick="pos10()" class="ball"></div>
+                        </div>
+                    </div>
+    
+                    <div class="grid-area-2">
+                        <!-- The Question with input -->
+                        <div class="heading">What calculation method do you want to use?</div>
+    
+                        <select class="input-select" id="Continent" name="Continent">
+                            <option class="option" value="spend">Spend Based</option>
+                            <option class="option" value="activity">Activity Based</option>
+                            <option class="option" value="unknown">Unknown</option>
+                        </select>
+                        <!-- BACK == BUTTON PILL -->
+                        <div class="container-left">
+                            <div class="pill-container">
+                                <button class="pill-btn btn-back-pill btn-active" onclick="pos8()">
+    
+                                    <svg class="arrow-up" aria-hidden="true" viewBox="0 0 20 20">
+                                        <path fill="rgb(33, 81, 108)"
+                                            d="M9.146 0.646l-6 6c-0.195 0.195-0.195 0.512 0 0.707s0.512 0.195 0.707 0l5.146-5.146v16.293c0 0.276 0.224 0.5 0.5 0.5s0.5-0.224 0.5-0.5v-16.293l5.146 5.146c0.195 0.195 0.512 0.195 0.707 0 0.098-0.098 0.146-0.226 0.146-0.354s-0.049-0.256-0.146-0.354l-6-6c-0.195-0.195-0.512-0.195-0.707 0z">
+                                        </path>
+                                    </svg>
+    
+                                    Back
+                                </button>
+    
+                                <!-- NEXT == BUTTON PILL -->
+                                <button class=" pill-btn btn-next-pill btn-active" onclick="pos10()">Next
+    
+                                    <svg class="arrow-down" viewBox="0 0 20 20">
+                                        <path fill=#fff
+                                            d="M9.854 19.354l6-6c0.195-0.195 0.195-0.512 0-0.707s-0.512-0.195-0.707 0l-5.146 5.146v-16.293c0-0.276-0.224-0.5-0.5-0.5s-0.5 0.224-0.5 0.5v16.293l-5.146-5.146c-0.195-0.195-0.512-0.195-0.707 0-0.098 0.098-0.146 0.226-0.146 0.354s0.049 0.256 0.146 0.354l6 6c0.195 0.195 0.512 0.195 0.707 0z">
+                                        </path>
+                                    </svg>
+                                </button>
+    
+                            </div>
+                        </div>
+    
+    
+                    </div>
+                </div>
+            </div>
+    
+    
+            <!-- Question 10 - Payment -->
+            <div id="q10" class="container flex">
+                <div class="grid-layout">
+                    <!-- The Navigation Line -->
+                    <div class="line-container grid-area-1">
+                        <div class="ball-container">
+                            <hr class="line">
+                            <div onclick="pos1()" class="ball"></div>
+                            <div onclick="pos2()" class="ball"></div>
+                            <div onclick="pos3()" class="ball"></div>
+                            <div onclick="pos4()" class="ball"></div>
+                            <div onclick="pos5()" class="ball"></div>
+                            <div onclick="pos6()" class="ball"></div>
+                            <div onclick="pos7()" class="ball"></div>
+                            <div onclick="pos8()" class="ball"></div>
+                            <div onclick="pos9()" class="ball"></div>
+                            <div onclick="pos10()" class="ball  ball-active"></div>
+                        </div>
+                    </div>
+    
+                    <div class="grid-area-2">
+                        <!-- The Question with input -->
+                        <div class="heading">How do you want to handle the the payment?</div>
+    
+                        <select class="input-select" id="Continent" name="Continent">
+                            <option class="option" value="europe">Single Project</option>
+                            <option class="option" value="namerica">Monthly Subscription</option>
+                            <option class="option" value="asia">Annual Subscription</option>
+                        </select>
+                        <!-- BACK == BUTTON PILL -->
+                        <div class="container-left">
+                            <div class="pill-container">
+                                <button class="pill-btn btn-back-pill btn-active" onclick="pos9()">
+    
+                                    <svg class="arrow-up" aria-hidden="true" viewBox="0 0 20 20">
+                                        <path fill="rgb(33, 81, 108)"
+                                            d="M9.146 0.646l-6 6c-0.195 0.195-0.195 0.512 0 0.707s0.512 0.195 0.707 0l5.146-5.146v16.293c0 0.276 0.224 0.5 0.5 0.5s0.5-0.224 0.5-0.5v-16.293l5.146 5.146c0.195 0.195 0.512 0.195 0.707 0 0.098-0.098 0.146-0.226 0.146-0.354s-0.049-0.256-0.146-0.354l-6-6c-0.195-0.195-0.512-0.195-0.707 0z">
+                                        </path>
+                                    </svg>
+    
+                                    Back
+                                </button>
+    
+                                <!-- NEXT == BUTTON PILL -->
+                                <button class="pill-btn pill-btn-submit btn-active" onclick="pos0()">Submit
+                                    <svg aria-hidden="true" viewBox="0 0 20 20" fill="#fff">
+                                        <path
+                                            d="M5.5 17.5c-0.128 0-0.256-0.049-0.354-0.146l-5-5c-0.195-0.195-0.195-0.512 0-0.707s0.512-0.195 0.707 0l4.646 4.646 13.646-13.646c0.195-0.195 0.512-0.195 0.707 0s0.195 0.512 0 0.707l-14 14c-0.098 0.098-0.226 0.146-0.354 0.146z">
+                                        </path>
+                                    </svg>
+                                </button>
+    
+                            </div>
+                        </div>
+    
+    
+                    </div>
+                </div>
+            </div>
+    
+    
+    
+        </div>
+    </div>
+
+
+
+
+
+
+
+    <script src="/main.js"></script>
+</body>
+
+</html>
